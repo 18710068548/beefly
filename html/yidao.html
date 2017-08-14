@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/base.css">
+    <title>你好呀</title>
+    <style>
+        .tiao {
+            width: 9.65rem;
+            position: absolute;
+            height: 3rem;
+            left: 50%;
+            bottom: 5.5rem;
+            margin-left: -4.825rem;
+            z-index: 100;
+        }
+    </style>
+
+</head>
+
+<body>
+    <img src="../img/kaiping.png" alt="" style='width:100%;height:100%'>
+    <div class='tiao'>
+
+    </div>
+</body>
+<script src='js/fontSize.js'></script>
+<script>
+    window.addEventListener('load', function() {
+        var tiao = document.getElementsByClassName('tiao')[0]
+        setTimeout(function() {
+            window.location = './redone.html'
+        }, 1000);
+
+        tiao.onclick = function() {
+            //alert(1)
+            window.location = './redone.html'
+        }
+
+    })
+</script>
+
+</html>

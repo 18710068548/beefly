@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/bottom.png") no-repeat bottom center #fff;
+  background-size: 100vw;
+}
+
+  .first-body {
+    padding: 0.4rem 0.8rem; }
+  .first-body p {
+      font-size: 0.6rem;
+      font-weight: bolder;
+      line-height: 2; }
+
+.opi {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  display: none; }
+
+.sorry {
+  width: 12.16rem;
+  height: 8.8rem;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  margin-left: -6.08rem;
+  margin-top: -4.4rem;
+  display: none;
+  background: url(../img/xianze.png) no-repeat;
+  background-size: 100%;
+  position: absolute; }
+  .sorry .p1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -2.8rem;
+    font-size: 0.6rem; }
+  .sorry .btn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-left: -3.42rem;
+    width: 6.84rem;
+    height: 1.6rem;
+    border-radius: 1rem;
+    background: #ffe32d;
+    text-align: center;
+    line-height: 1.6rem;
+    font-size: 0.56rem; }
+
+.yes {
+  display: none;
+  width: 12.16rem;
+  height: 12.8rem;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  margin-left: -6.08rem;
+  margin-top: -8rem;
+  background: url(../img/duile.png) no-repeat;
+  background-size: 100%;
+  position: absolute; }
+  .yes .yes-p1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -2.4rem;
+    margin-top: -1.2rem;
+    color: #3BE334;
+    font-size: 0.8rem; }
+  .yes .yes-p2 {
+    text-align: center;
+    width: 9.8rem;
+    height: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -5rem;
+    margin-top: 0.2rem;
+    font-size: 0.4rem;
+    line-height: 0.72rem; }
+  .yes .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -3.2rem;
+    margin-top: 3.4rem;
+    width: 6.84rem;
+    height: 1.6rem;
+    border-radius: 1rem;
+    background: #ffe32d;
+    text-align: center;
+    line-height: 1.6rem;
+    font-size: 0.56rem; }
+
+.yihan {
+  display: none;
+  width: 12.16rem;
+  height: 12.8rem;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  margin-left: -6.08rem;
+  margin-top: -8rem;
+  background: url(../img/duile.png) no-repeat;
+  background-size: 100%;
+  position: absolute; }
+  .yihan .yihan-p1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -3.6rem;
+    margin-top: -1.2rem;
+    color: red;
+    font-size: 0.8rem; }
+  .yihan .yihan-p2 {
+    text-align: center;
+    width: 9.8rem;
+    height: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -5rem;
+    margin-top: 0.2rem;
+    font-size: 0.4rem;
+    line-height: 0.72rem; }
+  .yihan .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -3.2rem;
+    margin-top: 3.4rem;
+    width: 6.84rem;
+    height: 1.6rem;
+    border-radius: 1rem;
+    background: #ffe32d;
+    text-align: center;
+    line-height: 1.6rem;
+    font-size: 0.56rem; }
+
+.third-box {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/pic4.jpg) no-repeat;
+  background-size: 100%;
+  position: relative; }
+
+.main {
+  width: 100%;
+  z-index: 3;
+  position: absolute;
+  top: 5.84rem;
+  left: 0.04rem; }
+  .main:after {
+    display: block;
+    clear: both;
+    content: ''; }
+  .main .list {
+    width: 100%; }
+    .main .list .left {
+      width: 3rem;
+      float: left;
+      text-align: center; }
+      .main .list .left .danxuan {
+        background: url(../img/tuoyuan.png) no-repeat;
+        background-size: 100%;
+        display: block;
+        width: 0.6rem;
+        height: 0.6rem;
+        margin-left: 0.6rem;
+        margin-right: 0.1rem;
+        float: left; }
+        .main .list .left .danxuan img {
+          width: 100%;
+          height: 100%; }
+      .main .list .left .Xactive {
+        background: url(../img/zu.png) no-repeat;
+        background-size: 100%; }
+      .main .list .left .content {
+        font-size: 0.52rem;
+        display: block;
+        width: 3rem;
+        height: 4.04rem;
+        margin-bottom: 0.84rem; }
+    .main .list .right {
+      width: 9.36rem;
+      float: left; }
+      .main .list .right .pic {
+        display: block;
+        width: 9.36rem;
+        height: 4.04rem;
+        border-radius: 0.4rem;
+        float: right;
+        margin-bottom: 0.84rem; }
+        .main .list .right .pic img {
+          width: 100%;
+          border-radius: 0.4rem;
+          height: 100%; }
+  .main .next {
+    width: 13.44rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    .main .next .s-next {
+      display: block;
+      width: 5.92rem;
+      height: 1.8rem; }
+      .main .next .s-next img {
+        width: 100%;
+        height: 100%; }
+    .main .next .x-next {
+      display: block;
+      width: 5.92rem;
+      height: 1.8rem; }
+      .main .next .x-next img {
+        width: 100%;
+        height: 100%; }
+    .main .next1  #gd{
+          width: 100%;
+          margin-top: 0.4rem;  }
+
+/*# sourceMappingURL=third.css.map */

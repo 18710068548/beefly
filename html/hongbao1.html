@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/hongbao1.css">
+  <script src="../js/fontSize.js"></script>
+  <script src="../js/jquery-2.1.4.min.js" charset="utf-8"></script>
+  <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <span>60%</span>
+    </div>
+    <div class="footer">
+        <input type="text" placeholder="请输入您的手机号">
+        <div class="btn"></div>
+    </div>
+</body>
+<script type="text/javascript">
+  $(".btn").click(function() {
+    if ($("input").val.length = 11) {
+      window.location = './lqcg.html'
+    }else{
+      alert("请输入手机号！")
+    }
+  });
+</script>
+</html>

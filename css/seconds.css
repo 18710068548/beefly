@@ -1,0 +1,155 @@
+#first {
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/bottom.png") no-repeat bottom center #fff;
+  background-size: 100vw; }
+  #first .first-body {
+    padding: 0.4rem 0.8rem; }
+    #first .first-body p {
+      font-size: 0.6rem;
+      font-weight: bolder;
+      line-height: 2; }
+  #first #carimg {
+    display: block;
+    width: 100%;
+    margin: 0.6rem auto; }
+  #first ul {
+    border-bottom: 1px solid #f3f3f3; }
+    #first ul li {
+      font-size: 0.56rem;
+      padding: 0.8rem 0;
+      border: 1px solid #f3f3f3;
+      border-bottom: 1px solid transparent;
+      color: #4c4c4c;
+      display: flex; }
+      #first ul li .radio {
+        border-radius: 50%;
+        width: 0.54rem;
+        height: 0.54rem;
+        background: url("../img/radio.png") no-repeat top center;
+        background-size: 0.54rem 1.08rem; }
+      #first ul li .act {
+        background-position: bottom center; }
+  #first button {
+    outline: none;
+    width: 40%;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    margin: 0.8rem 0.6rem 0.4rem;
+    background-color: #ffe32d;
+    border: 1px solid #ffe32d; }
+  #first .active {
+    background-color: #ffe32d;
+    border: 1px solid #ffe32d; }
+  #first #gd {
+    width: 100%; }
+
+
+#mb {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  top: 0; }
+  #mb #yes {
+    display: none;
+    width: 12.12rem;
+    height: 12.32rem;
+    margin: 0 auto;
+    background: url("../img/yes.png") no-repeat center;
+    background-size: 12.12rem 12.32rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -6.06rem;
+    margin-top: -6.16rem; }
+    #mb #yes .yes-body {
+      width: 9.2rem;
+      margin: 4rem auto 0;
+      text-align: center; }
+      #mb #yes .yes-body span {
+        line-height: 2;
+        font-size: 0.8rem;
+        font-weight: bolder;
+        color: green; }
+      #mb #yes .yes-body p {
+        font-size: 0.6rem;
+        line-height: 1.5; }
+      #mb #yes .yes-body button {
+        width: 6.84rem;
+        height: 1.5rem;
+        background-color: #ffe32d;
+        border: 0;
+        border-radius: 0.76rem;
+        margin-top: 0.4rem;
+        outline: none; }
+  #mb #none {
+    display: none;
+    width: 12.12rem;
+    height: 12.32rem;
+    margin: 0 auto;
+    background: url("../img/none.png") no-repeat top center;
+    background-size: 12.12rem 12.32rem;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -6.06rem;
+    margin-top: -6.16rem; }
+    #mb #none .none-body {
+      width: 9.2rem;
+      margin: 4rem auto 0;
+      text-align: center; }
+      #mb #none .none-body span {
+        line-height: 2;
+        font-size: 0.8rem;
+        font-weight: bolder;
+        color: green; }
+      #mb #none .none-body p {
+        font-size: 0.6rem;
+        line-height: 1.5; }
+      #mb #none .none-body button {
+        width: 6.84rem;
+        height: 1.5rem;
+        background-color: #ffe32d;
+        border: 0;
+        border-radius: 0.76rem;
+        margin-top: 0.4rem;
+        outline: none; }
+  #mb #onlyone {
+    display: none;
+    width: 12.12rem;
+    height: 8.76rem;
+    margin: 0 auto;
+    background: url("../img/only.png") no-repeat top center;
+    background-size: 12.12rem 8.76rem;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -6.06rem;
+    margin-top: -4.38rem; }
+    #mb #onlyone .only-body {
+      width: 9.2rem;
+      margin: 4rem auto 0;
+      text-align: center; }
+      #mb #onlyone .only-body span {
+        line-height: 2;
+        font-size: 0.8rem;
+        font-weight: bolder;
+        color: gray; }
+      #mb #onlyone .only-body button {
+        width: 6.84rem;
+        height: 1.5rem;
+        background-color: #ffe32d;
+        border: 0;
+        border-radius: 0.76rem;
+        margin-top: 0.4rem;
+        outline: none; }
+
+
+/*# sourceMappingURL=seconds.css.map */

@@ -1,0 +1,200 @@
+@function rem($px) {
+   @return $px / 50 + rem
+}
+
+#first {
+  width: 100vw;
+  height: 100vh;
+  // background-color: #fff;
+  background: url('../img/bottom.png') no-repeat bottom center #fff;
+  background-size: 100vw;
+
+  .first-body {
+    padding: rem(20) rem(40);
+
+    p {
+      font-size: rem(30);
+      font-weight: bolder;
+      line-height: 2;
+    }
+  }
+
+  #carimg {
+    display: block;
+    width: 100%;
+    margin: rem(30) auto;
+  }
+
+  ul {
+    li {
+      font-size: rem(28);
+      line-height: 3;
+      border-top: 1px solid #ccc;
+
+      div {
+        margin-right: rem(10);
+        display: inline-block;
+        // background-color: transparent;
+        // border: 1px solid orange;
+        border-radius: 50%;
+        width: rem(27);
+        height: rem(27);
+        vertical-align: middle;
+        position: relative;
+        background: url('../img/radio.png') no-repeat top center;
+        background-size: rem(27) rem(54);
+      }
+
+      .act {
+        background-position: bottom center;
+      }
+    }
+  }
+
+  button {
+    outline: none;
+    width: 40%;
+    height: rem(50);
+    line-height: rem(50);
+    text-align: center;
+    border: 1px solid #fafafa;
+    background-color: #fff;
+    border-radius: rem(10);
+    margin: rem(40) rem(10) rem(20);
+  }
+
+  .active {
+    background-color: orange;
+    border: 1px solid orange;
+  }
+
+  #gd {
+    width: 100%;
+  }
+}
+
+
+#mb{
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  #yes{
+    display: none;
+    width: rem(606);
+    height: rem(616);
+    margin: 0 auto;
+    background: url('../img/yes.png') no-repeat center;
+    background-size: rem(606) rem(616);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: - rem(303);
+    margin-top: - rem(308);
+    .yes-body{
+      width: rem(460);
+      margin: rem(200) auto 0;
+      text-align: center;
+      span{
+        line-height: 2;
+        font-size: rem(40);
+        font-weight: bolder;
+        color: green;
+      }
+      p{
+        font-size: rem(30);
+        line-height: 1.5
+      }
+      button{
+        width: rem(342);
+        height: rem(75);
+        background-color: #ffe32d;
+        border: 0;
+        border-radius: rem(38);
+        margin-top: rem(20);
+        outline: none;
+      }
+    }
+  }
+
+
+  #none{
+    display: none;
+    width: rem(606);
+    height: rem(616);
+    margin: 0 auto;
+    background: url('../img/none.png') no-repeat top center ;
+    background-size: rem(606) rem(616);
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: - rem(303);
+    margin-top: - rem(308);
+    .none-body{
+      width: rem(460);
+      margin: rem(200) auto 0;
+      text-align: center;
+      span{
+        line-height: 2;
+        font-size: rem(40);
+        font-weight: bolder;
+        color: green;
+      }
+      p{
+        font-size: rem(30);
+        line-height: 1.5
+      }
+      button{
+        width: rem(342);
+        height: rem(75);
+        background-color: #ffe32d;
+        border: 0;
+        border-radius: rem(38);
+        margin-top: rem(20);
+        outline: none;
+      }
+    }
+  }
+
+  #onlyone{
+    display: none;
+    width: rem(606);
+    height: rem(438);
+    margin: 0 auto;
+    background: url('../img/only.png') no-repeat top center ;
+    background-size: rem(606) rem(438);
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: - rem(303);
+    margin-top: - rem(219);
+    .only-body{
+      width: rem(460);
+      margin: rem(200) auto 0;
+      text-align: center;
+      span{
+        line-height: 2;
+        font-size: rem(40);
+        font-weight: bolder;
+        color: gray;
+      }
+      button{
+        width: rem(342);
+        height: rem(75);
+        background-color: #ffe32d;
+        border: 0;
+        border-radius: rem(38);
+        margin-top: rem(20);
+        outline: none;
+      }
+    }
+  }
+
+
+}

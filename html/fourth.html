@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="../css/base.css">
+		<link rel="stylesheet" href="../css/fourth.css">
+		<script src="../js/fontSize2.js" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="first-body">
+				<p>4、下班后，朋友约你一起聚餐，一下三个餐厅（红点标记）哪个可以骑小蜜蜂前去？</p>
+		</div>
+		<div class="main">
+     <div class="list">
+			 <div class="left">
+				 <span class="content"><span class="danxuan"></span>A.</span>
+				 <span class="content"><span class="danxuan"></span>B.</span>
+				 <span class="content"><span class="danxuan"></span>C.</span>
+			 </div>
+			 <div class="right">
+           <span class="pic"><img src="../img/tu3.png" alt=""></span>
+					 <span class="pic"><img src="../img/tu2.png" alt=""></span>
+					 <span class="pic"><img src="../img/tu1.png" alt=""></span>
+			 </div>
+     </div>
+		 <div class="next">
+			 <span class="s-next">
+			 	<img src="../img/shangH.png" alt="">
+			 </span>
+       <span class="x-next">
+       	<img src="../img/xia.png" alt="">
+       </span>
+
+		 </div>
+		 <div class="next1">
+			<img src="../img/img4bon.png" alt="" id="gd">
+		 </div>
+	 </div>
+   <div class="opi">
+
+   </div>
+	 <div class="sorry">
+		 <p class="p1">请您先选择一个答案</p>
+		 <button class="btn">朕知道了</button>
+	 </div>
+	 <div class="yes">
+        <p class="yes-p1">恭喜您，答对了</p>
+        <p class="yes-p2">
+          将首页地图缩小显示后，将会除夕拿蓝色覆盖区域，该区域即是小蜜蜂的运营区域。智能在运营区域范围内骑行，否则会扣相应的押金及信用积
+        </p>
+        <button class="btn">朕知道了</button>
+    </div>
+		<div class="yihan">
+        <p class="yihan-p1">很遗憾，正确答案是B</p>
+				<p class="yihan-p2">
+					将首页地图缩小显示后，将会除夕拿蓝色覆盖区域，该区域即是小蜜蜂的运营区域。智能在运营区域范围内骑行，否则会扣相应的押金及信用积
+				</p>
+				<button class="btn">朕知道了</button>
+		</div>
+    </div>
+	</body>
+	<script src="../js/jquery-2.1.4.min.js" charset="utf-8"></script>
+	<script type="text/javascript">
+	$(function(){
+		$('.content').click(function(){
+			$(this).find('.danxuan').addClass('Xactive').parent('.content').siblings().find('.danxuan').removeClass('Xactive')
+		})
+		$('.s-next').click(function(){
+			window.location = './first.html'
+		})
+		$('.x-next').click(function(){
+		$('.opi').show()
+
+			if($('.Xactive').index()<0){
+		   	$('.sorry').show()
+			}
+			//console.log($('.xuan1').index())
+			 else if($('.Xactive').index()>=0){
+				 if($('.Xactive').parent().index()==1){
+					// 	var flag=confirm('答案正确')
+					// console.log(flag)
+					$('.yes').show()
+	 			}
+	 			else{
+					$('.yihan').show()
+	 			}
+			 }
+
+		})
+		$('.btn').click(function(){
+			$('.opi').hide()
+			$('.sorry').hide()
+				$('.yes').hide()
+				$('.yihan').hide()
+				if ($('.Xactive').index()<0) {
+					window.location = './fourth.html'
+				}else if ($('.Xactive').parent().index()==1||$('.Xactive').index()>=0) {
+					window.location = './fifth.html'
+				}
+		})
+	})
+</script>
+</html>

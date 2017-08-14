@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/first.css">
+  <script src="../js/fontSize-new.js"></script>
+  <script src="../js/jquery.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div id="first">
+    <div class="first-body">
+      <p>3、到公司后，同事跟你说，他将小蜜蜂停在公司楼下的地下停车场了。你告诉他这属于违停，他将会被？</p>
+      <img src="../img/imgg3.png" alt="" id="carimg">
+      <ul>
+        <li>
+          <div class="radio"></div>
+          <label for="">&nbsp;A.扣除20元押金。</label>
+        </li>
+        <li>
+          <div class="radio"></div>
+          <label for="">&nbsp;B.扣除全部押金。</label>
+        </li>
+        <li>
+
+          <div class="radio"></div>
+          <label for="">&nbsp;C.扣除20元押金及10分信用积分。</label>
+        </li>
+
+
+      </ul>
+      <div>
+        <button class="active prev">上一题</button>
+        <button class="active next">下一题</button>
+        <img src="../img/imgg3bon.png" alt="" id="gd">
+
+      </div>
+
+
+
+
+    </div>
+  </div>
+  <div id="mb">
+    <div id="yes">
+      <div class="yes-body">
+        <span>恭喜您，答对了</span>
+        <p>
+          将首页地图缩小显示后，将会除夕拿蓝色覆盖区域，该区域即是小蜜蜂的运营区域。智能在运营区域范围内骑行，否则会扣相应的押金及信用积
+        </p>
+        <button class="know">朕知道了</button>
+      </div>
+    </div>
+
+    <div id="none">
+      <div class="none-body">
+        <span>很遗憾，正确答案是B</span>
+        <p>
+          将首页地图缩小显示后，将会除夕拿蓝色覆盖区域，该区域即是小蜜蜂的运营区域。智能在运营区域范围内骑行，否则会扣相应的押金及信用积
+        </p>
+        <button class="know">朕知道了</button>
+
+      </div>
+    </div>
+
+
+    <div id="onlyone">
+      <div class="only-body">
+        <span>请您先选择一个答案</span>
+        <button class="know">朕知道了</button>
+      </div>
+    </div>
+   </div>
+</body>
+
+<script>
+  var i;
+  $("li").click(function() {
+    i = $(this).index()
+    $("li .radio").removeClass('act');
+    $(this).children('.radio').addClass('act');
+  });
+  $(".next").click(function() {
+
+    /* Act on the event */
+    console.log(i)
+    if (i == undefined) {
+//    console.log(222222222)
+      $("#mb").css('display', 'block');
+      $('#onlyone').css('display', 'block');
+    }else if (i != 1 || i == undefined) {
+//    console.log(111111)
+      $("#mb").css('display', 'block');
+      $('#none').css('display', 'block');
+    }  else if (i == 1) {
+//    console.log(33333333)
+      $("#mb").css('display', 'block');
+      $('#yes').css('display', 'block');
+    }
+  });
+  $(".prev").click(function() {
+    window.location = './seconds.html'
+  });
+
+  $(".know").click(function() {
+    /* Act on the event */
+    $("#mb").css('display', 'none');
+    $("#yes").css('display', 'none');
+    $("#none").css('display', 'none');
+    $("#onlyone").css('display', 'none');
+    if (i == undefined) {
+      window.location = './first.html'
+    }else if(i == 1||i != 1 ){
+      window.location = './fourth.html'
+    }
+  });
+</script>
+
+</html>
